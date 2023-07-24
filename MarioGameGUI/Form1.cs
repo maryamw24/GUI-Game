@@ -17,14 +17,17 @@ namespace MarioGameGUI
     {
         Game game;
         char movementStatus = 's';
+        CollisionDetection collider;
         public Form1()
         {
             InitializeComponent();
             game = new Game(this);
-
+            collider = new CollisionDetection();
+            
         }
         private void timer1_Tick(object sender, EventArgs e)
         {
+            health.Text = game.GetHealth().ToString();
             MoveMario();
             move();
             MoveFire();
@@ -41,15 +44,11 @@ namespace MarioGameGUI
 
             foreach (Fire f in game.MFires)
             {
-                if (!f.Stopped)
+                if (collider.isTurtleCollideWithBullet(f))
                 {
-                    f.move(f.nextCell());
+                    game.Turtle1.Health = game.Turtle1.Health - 5;
                 }
-                else
-                {
-                    continue;
-                }
-
+                f.move(f.nextCell());
             }
         }
 
@@ -98,6 +97,7 @@ namespace MarioGameGUI
                 Fire f = new Fire(MarioGameGUI.Properties.Resources.fire, NewCell, GameDirection.Right);
                 game.addMarioFire(f);
             }
+
 
 
         }

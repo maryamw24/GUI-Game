@@ -10,10 +10,14 @@ namespace MarioGameGUI.GL
     public class Turtle : GameObject
     {
         GameDirection direction;
+        int health = 100;
         public Turtle(Image image, GameCell startCell) : base(GameObjectType.Turtle, image)
         {
             base.CurrentCell = startCell;
         }
+
+        public int Health { get => health; set => health = value; }
+
         public void move(GameCell gameCell)
         {
             if (base.CurrentCell != null)

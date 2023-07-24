@@ -27,6 +27,10 @@ namespace MarioGameGUI.GL
             printMaze(Grid);
 
         }
+        public int GetHealth()
+        {
+            return Turtle.Health;
+        }
 
         public void addMarioFire(Fire f)
         {

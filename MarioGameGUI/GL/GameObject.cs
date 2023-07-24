@@ -14,7 +14,6 @@ namespace MarioGameGUI.GL
         private char displayCharacter;
         private GameObjectType gameObjectType;
         private Image img;
-
         public GameCell CurrentCell { get { return currentCell; } set { currentCell = value; currentCell.SetGameObject(this); } }
         public char DisplayCharacter { get => displayCharacter; set => displayCharacter = value; }
         public Image Img { get => img; set => img = value; }

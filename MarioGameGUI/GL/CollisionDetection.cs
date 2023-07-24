@@ -11,9 +11,10 @@ namespace MarioGameGUI.GL
         public bool isTurtleCollideWithBullet(Fire f)
         {
             bool flag = false;
-            if (f. == GameObjectType.Player)
+            if (f.nextCell().CurrentGameObject.GameObjectType == GameObjectType.Turtle)
             {
                 flag = true;
+                f.Stopped = true;
             }
 
             return flag;

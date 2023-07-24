@@ -12,7 +12,7 @@ namespace MarioGameGUI.GL
     {
         private int row;
         private int col;
-        public GameObject currentGameObject;
+        private GameObject currentGameObject;
         private PictureBox pictureBox;
         private int height = 25;
         private int width = 20;
@@ -22,6 +22,8 @@ namespace MarioGameGUI.GL
         public int Column { get => col; set => col = value; }
         public PictureBox PictureBox { get => pictureBox; set => pictureBox = value; }
         public GameGrid Grid { get => grid; set => grid = value; }
+        public GameObject CurrentGameObject { get => currentGameObject; set => currentGameObject = value; }
+
         public GameCell(int row, int col, GameGrid grid)
         {
             this.row = row;
@@ -41,7 +43,7 @@ namespace MarioGameGUI.GL
         }
         public void SetGameObject(GameObject gameObject)
         {
-            this.currentGameObject = gameObject;
+            this.CurrentGameObject = gameObject;
             this.pictureBox.Image = gameObject.Img;
             
         }
@@ -55,7 +57,7 @@ namespace MarioGameGUI.GL
             if (direction == GameDirection.Left && col > 0)
             {
                 GameCell cell = grid.getCell(row, col - 1);
-                if (cell.currentGameObject.GameObjectType == GameObjectType.None || cell.currentGameObject.GameObjectType == GameObjectType.Player)
+                if (cell.CurrentGameObject.GameObjectType == GameObjectType.None || cell.CurrentGameObject.GameObjectType == GameObjectType.Player || cell.CurrentGameObject.GameObjectType == GameObjectType.Turtle)
                 {
                     return cell;
                 }
@@ -64,7 +66,7 @@ namespace MarioGameGUI.GL
             if (direction == GameDirection.Right && col < grid.Cols - 1)
             {
                 GameCell cell2 = grid.getCell(row, col + 1);
-                if (cell2.currentGameObject.GameObjectType  == GameObjectType.None || cell2.currentGameObject.GameObjectType == GameObjectType.Player)              
+                if (cell2.CurrentGameObject.GameObjectType  == GameObjectType.None || cell2.CurrentGameObject.GameObjectType == GameObjectType.Player || cell2.CurrentGameObject.GameObjectType == GameObjectType.Turtle)
                 {
                     return cell2;
                 }
@@ -73,7 +75,7 @@ namespace MarioGameGUI.GL
             if (direction == GameDirection.Up && row > 0)
             {
                 GameCell cell3 = grid.getCell(row - 1, col);
-                if (cell3.currentGameObject.GameObjectType == GameObjectType.None || cell3.currentGameObject.GameObjectType == GameObjectType.Player)
+                if (cell3.CurrentGameObject.GameObjectType == GameObjectType.None || cell3.CurrentGameObject.GameObjectType == GameObjectType.Player  || cell3.CurrentGameObject.GameObjectType == GameObjectType.Turtle)
                 {
                     return cell3;
                 }
@@ -82,7 +84,7 @@ namespace MarioGameGUI.GL
             if (direction == GameDirection.Down && row < grid.Rows - 2)
             {
                 GameCell cell4 = grid.getCell(row + 1, col);
-                if (cell4.currentGameObject.GameObjectType == GameObjectType.None || cell4.currentGameObject.GameObjectType == GameObjectType.Player)
+                if (cell4.CurrentGameObject.GameObjectType == GameObjectType.None || cell4.CurrentGameObject.GameObjectType == GameObjectType.Player || cell4.CurrentGameObject.GameObjectType == GameObjectType.Turtle)
                 {
                     return cell4;
                 }
