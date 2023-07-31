@@ -24,6 +24,15 @@ namespace MarioGameGUI.GL
             this.gameObjectType = objectType;
             this.img = img;
         }
+        public void SetImage(Image img)
+        {
+            this.img = img;
+        }
+        public void SetGameObject(GameObjectType objectType, Image img)
+        {
+            this.gameObjectType = objectType;
+            this.img = img;
+        }
         public GameObject(char displayCharacter, GameObjectType objectType)
         {
             this.displayCharacter= displayCharacter;
@@ -43,6 +52,14 @@ namespace MarioGameGUI.GL
             else if (displayCharacter == 'm')
             {
                 type = GameObjectType.Player;
+            }
+            else if(displayCharacter == 'c')
+            {
+                type = GameObjectType.coin;
+            }
+            else if(displayCharacter == '!')
+            {
+                type = GameObjectType.End;
             }
             
             return type;

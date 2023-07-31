@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="MarioGameGUI.GL.CollisionDetection" Collapsed="true">
+    <Position X="16" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAAAAAAAAAEAABAAAAAAAACAAAAAAAAg=</HashCode>
+      <FileName>GL\CollisionDetection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MarioGameGUI.GL.Fire" Collapsed="true">
+    <Position X="7.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAIACCAAAAAAAAAAAAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>GL\Fire.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MarioGameGUI.GL.Game" Collapsed="true">
+    <Position X="16" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAFgADAAJAAQgABQEIAQQABxFACAQQCA8AACAAAAI=</HashCode>
+      <FileName>GL\Game.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MarioGameGUI.GL.GameCell" Collapsed="true">
+    <Position X="16" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEEgAAAAIAAAQAQABAAwACACIAAgBgAAAAgAAAAAA=</HashCode>
+      <FileName>GL\GameCell.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MarioGameGUI.GL.GameGrid" Collapsed="true">
+    <Position X="16" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAEAAAAAAAEAAAABAAIIAAACAAAAAAIAAAAIAAAA=</HashCode>
+      <FileName>GL\GameGrid.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MarioGameGUI.GL.GameObject" Collapsed="true">
+    <Position X="8.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAkAAAAAAAAAEAAwAAQAAAAEAAkAAAABA=</HashCode>
+      <FileName>GL\GameObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MarioGameGUI.GL.GoombaH" Collapsed="true">
+    <Position X="5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAQAAAAMACAACAAEAAAABAAAABAAAAAAAAAAAg=</HashCode>
+      <FileName>GL\GoombaH.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MarioGameGUI.GL.Mario" Collapsed="true">
+    <Position X="9.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAABAAAAIACAACAAEAAAABAAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>GL\Mario.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MarioGameGUI.GL.Turtle" Collapsed="true">
+    <Position X="11.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAIACAACAAEAAAABAAAABAAAAAAAAAAAg=</HashCode>
+      <FileName>GL\Turtle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MarioGameGUI.GameStage" Collapsed="true">
+    <Position X="12.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AhQAwAAQACQAEBiIBACAAAgCAIE6KAMKAXwIGICAAAA=</HashCode>
+      <FileName>UI\GameStage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MarioGameGUI.Instructions" Collapsed="true">
+    <Position X="7.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAACAAAACAAAIAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>UI\Instructions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MarioGameGUI.MainPage" Collapsed="true">
+    <Position X="10" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAACAAAACAAA4AAAAAHAAAAAAAAA=</HashCode>
+      <FileName>UI\MainPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MarioGameGUI.Missions" Collapsed="true">
+    <Position X="7.75" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAABAAACAAABAAAACAQAACAAAIAAAAAEAAAQBAAAA=</HashCode>
+      <FileName>UI\Missions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MarioGameGUI.WLForm" Collapsed="true">
+    <Position X="7.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAABgAAACAAAACAAAYAgAAAGAAAABAAAA=</HashCode>
+      <FileName>UI\WLForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="MarioGameGUI.GL.GameDirection" Collapsed="true">
+    <Position X="16.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAACACAAAAAAAI=</HashCode>
+      <FileName>GL\GameDirection.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="MarioGameGUI.GL.GameObjectType" Collapsed="true">
+    <Position X="16.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAEAAAgAABAAAAAAAgQEAgAAAAAAAQEAAEA=</HashCode>
+      <FileName>GL\GameObjectType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

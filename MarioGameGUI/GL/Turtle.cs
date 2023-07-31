@@ -9,6 +9,7 @@ namespace MarioGameGUI.GL
 {
     public class Turtle : GameObject
     {
+        bool isDead = false;
         GameDirection direction;
         int health = 100;
         public Turtle(Image image, GameCell startCell) : base(GameObjectType.Turtle, image)
@@ -17,6 +18,8 @@ namespace MarioGameGUI.GL
         }
 
         public int Health { get => health; set => health = value; }
+        public bool IsDead { get => isDead; set => isDead = value; }
+        public GameDirection Direction { get => direction; set => direction = value; }
 
         public void move(GameCell gameCell)
         {
@@ -31,16 +34,16 @@ namespace MarioGameGUI.GL
         public GameCell nextCell()
         {
             GameCell gameCell = base.CurrentCell;
-            GameCell gameCell2 = base.CurrentCell.nextCell(direction);
+            GameCell gameCell2 = base.CurrentCell.nextCell(Direction);
             if (gameCell2 == gameCell)
             {
-                if (direction == GameDirection.Right)
+                if (Direction == GameDirection.Right)
                 {
-                    direction = GameDirection.Left;
+                    Direction = GameDirection.Left;
                 }
-                else if (direction == GameDirection.Left)
+                else if (Direction == GameDirection.Left)
                 {
-                    direction = GameDirection.Right;
+                    Direction = GameDirection.Right;
                 }
             }
             else

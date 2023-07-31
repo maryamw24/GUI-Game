@@ -8,12 +8,16 @@ namespace MarioGameGUI.GL
 {
     public enum GameObjectType
     {
-        Player,
         Pipe,
+        Player,
         Floor,
+        coin,
         Fire,
+        End,
         Turtle,
         Goomba,
+        Priness,
+        Knight,
         None
     }
 }

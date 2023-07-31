@@ -3,7 +3,6 @@ D:\GUI Game\MarioGameGUI\MarioGameGUI\bin\Debug\MarioGameGUI.exe
 D:\GUI Game\MarioGameGUI\MarioGameGUI\bin\Debug\MarioGameGUI.pdb
 D:\GUI Game\MarioGameGUI\MarioGameGUI\obj\Debug\MarioGameGUI.csproj.AssemblyReference.cache
 D:\GUI Game\MarioGameGUI\MarioGameGUI\obj\Debug\MarioGameGUI.csproj.SuggestedBindingRedirects.cache
-D:\GUI Game\MarioGameGUI\MarioGameGUI\obj\Debug\MarioGameGUI.Form1.resources
 D:\GUI Game\MarioGameGUI\MarioGameGUI\obj\Debug\MarioGameGUI.Properties.Resources.resources
 D:\GUI Game\MarioGameGUI\MarioGameGUI\obj\Debug\MarioGameGUI.csproj.GenerateResource.cache
 D:\GUI Game\MarioGameGUI\MarioGameGUI\obj\Debug\MarioGameGUI.csproj.CoreCompileInputs.cache
@@ -12,3 +11,8 @@ D:\GUI Game\MarioGameGUI\MarioGameGUI\obj\Debug\MarioGameGUI.pdb
 D:\GUI Game\MarioGameGUI\MarioGameGUI\bin\Debug\EZInput.dll
 D:\GUI Game\MarioGameGUI\MarioGameGUI\bin\Debug\EZInput.xml
 D:\GUI Game\MarioGameGUI\MarioGameGUI\obj\Debug\MarioGameGUI.csproj.CopyComplete
+D:\GUI Game\MarioGameGUI\MarioGameGUI\obj\Debug\MarioGameGUI.Missions.resources
+D:\GUI Game\MarioGameGUI\MarioGameGUI\obj\Debug\MarioGameGUI.GameStage.resources
+D:\GUI Game\MarioGameGUI\MarioGameGUI\obj\Debug\MarioGameGUI.WLForm.resources
+D:\GUI Game\MarioGameGUI\MarioGameGUI\obj\Debug\MarioGameGUI.MainPage.resources
+D:\GUI Game\MarioGameGUI\MarioGameGUI\obj\Debug\MarioGameGUI.Instructions.resources

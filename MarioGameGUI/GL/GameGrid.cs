@@ -18,20 +18,26 @@ namespace MarioGameGUI.GL
         public GameCell[,] Maze { get => maze; set => maze = value; }
         public int Rows { get => rows; set => rows = value; }
         public int Cols { get => cols; set => cols = value; }
-        public GameGrid(int rows, int columns)
+        public GameGrid(int rows, int columns, string path)
         {
             this.rows = rows;
             this.cols = columns;
             this.maze = new GameCell[rows, columns];
-            this.LoadMaze();
+            this.LoadMaze(path);
+        }
+        public void setGrid(int rows, int columns, string path)
+        {
+            this.rows = rows;
+            this.cols = columns;
+            this.maze = new GameCell[rows, columns];
+            this.LoadMaze(path);
         }
         public GameCell getCell(int row, int column)
         {
             return maze[row, column];   
         }
-        private void LoadMaze()
+        private void LoadMaze(string path)
         {
-            string path = "Maze.txt";
             StreamReader file = new StreamReader(path);
             for(int i = 0; i < rows; i++)
             {

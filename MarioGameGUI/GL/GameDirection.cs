@@ -8,6 +8,9 @@ namespace MarioGameGUI.GL
 {
     public enum GameDirection
     {
-        Left, Right, Up, Down
+        Left, 
+        Right, 
+        Up, 
+        Down
     }
 }

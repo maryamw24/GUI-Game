@@ -45,7 +45,12 @@ namespace MarioGameGUI.GL
         {
             this.CurrentGameObject = gameObject;
             this.pictureBox.Image = gameObject.Img;
-            
+
+        }
+        public GameCell DownCell()
+        {
+            GameCell cell = grid.getCell(this.row + 1, this.col);
+            return cell;
         }
         public static GameObject getBlankGameObject()
         {
@@ -57,7 +62,7 @@ namespace MarioGameGUI.GL
             if (direction == GameDirection.Left && col > 0)
             {
                 GameCell cell = grid.getCell(row, col - 1);
-                if (cell.CurrentGameObject.GameObjectType == GameObjectType.None || cell.CurrentGameObject.GameObjectType == GameObjectType.Player || cell.CurrentGameObject.GameObjectType == GameObjectType.Turtle)
+                if (cell.currentGameObject.GameObjectType != GameObjectType.Pipe && cell.currentGameObject.GameObjectType != GameObjectType.Floor)
                 {
                     return cell;
                 }
@@ -66,7 +71,7 @@ namespace MarioGameGUI.GL
             if (direction == GameDirection.Right && col < grid.Cols - 1)
             {
                 GameCell cell2 = grid.getCell(row, col + 1);
-                if (cell2.CurrentGameObject.GameObjectType  == GameObjectType.None || cell2.CurrentGameObject.GameObjectType == GameObjectType.Player || cell2.CurrentGameObject.GameObjectType == GameObjectType.Turtle)
+                if (cell2.currentGameObject.GameObjectType != GameObjectType.Pipe && cell2.currentGameObject.GameObjectType != GameObjectType.Floor)
                 {
                     return cell2;
                 }
@@ -75,7 +80,7 @@ namespace MarioGameGUI.GL
             if (direction == GameDirection.Up && row > 0)
             {
                 GameCell cell3 = grid.getCell(row - 1, col);
-                if (cell3.CurrentGameObject.GameObjectType == GameObjectType.None || cell3.CurrentGameObject.GameObjectType == GameObjectType.Player  || cell3.CurrentGameObject.GameObjectType == GameObjectType.Turtle)
+                if(cell3.currentGameObject.GameObjectType != GameObjectType.Pipe && cell3.currentGameObject.GameObjectType != GameObjectType.Floor)
                 {
                     return cell3;
                 }
@@ -84,7 +89,7 @@ namespace MarioGameGUI.GL
             if (direction == GameDirection.Down && row < grid.Rows - 2)
             {
                 GameCell cell4 = grid.getCell(row + 1, col);
-                if (cell4.CurrentGameObject.GameObjectType == GameObjectType.None || cell4.CurrentGameObject.GameObjectType == GameObjectType.Player || cell4.CurrentGameObject.GameObjectType == GameObjectType.Turtle)
+                if (cell4.currentGameObject.GameObjectType != GameObjectType.Pipe && cell4.currentGameObject.GameObjectType != GameObjectType.Floor)
                 {
                     return cell4;
                 }

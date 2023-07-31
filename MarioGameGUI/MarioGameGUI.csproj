@@ -49,11 +49,35 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="UI\GameStage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="UI\GameStage.Designer.cs">
+      <DependentUpon>GameStage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\WLForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\WLForm.Designer.cs">
+      <DependentUpon>WLForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\MainPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\MainPage.Designer.cs">
+      <DependentUpon>MainPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Instructions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Instructions.Designer.cs">
+      <DependentUpon>Instructions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Missions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Missions.Designer.cs">
+      <DependentUpon>Missions.cs</DependentUpon>
     </Compile>
     <Compile Include="GL\CollisionDetection.cs" />
     <Compile Include="GL\Fire.cs" />
@@ -63,13 +87,25 @@
     <Compile Include="GL\GameGrid.cs" />
     <Compile Include="GL\GameObject.cs" />
     <Compile Include="GL\GameObjectType.cs" />
-    <Compile Include="GL\Goomba.cs" />
+    <Compile Include="GL\GoombaH.cs" />
     <Compile Include="GL\Mario.cs" />
     <Compile Include="GL\Turtle.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="UI\GameStage.resx">
+      <DependentUpon>GameStage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\WLForm.resx">
+      <DependentUpon>WLForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\MainPage.resx">
+      <DependentUpon>MainPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Instructions.resx">
+      <DependentUpon>Instructions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Missions.resx">
+      <DependentUpon>Missions.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -81,6 +117,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="MarioClassDiagram.cd" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -111,9 +148,6 @@
     <None Include="Resources\sky.jpeg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\wall %281%29 %282%29.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\wall %281%29 %281%29.jpg" />
   </ItemGroup>
   <ItemGroup>
@@ -139,6 +173,60 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\goomba.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bullet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wall1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wall2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dollar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mario.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mario-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image-removebg-preview %289%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image-removebg-preview %288%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image-removebg-preview %2811%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stripes.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wall %281%29 %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image-removebg-preview %2810%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MarioCoverPage.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InstructionsPage.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TurtleKingdom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GoombaKingdom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MarioLeft.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MarioLeft-removebg-preview.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
